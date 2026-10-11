@@ -1,0 +1,13 @@
+# Local credentials.
+.env
+.env.*
+!.env.example
+
+# Generated workspaces and run reports.
+target/
+
+# OpenCode state written inside a workspace is never versioned either.
+.opencode/
+
+# macOS metadata.
+.DS_Store

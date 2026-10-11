@@ -1,0 +1,9 @@
+{
+  "services": [
+    { "name": "auth",               "equipe": "Team Platform", "criticite": "critique", "depend_de": [] },
+    { "name": "facturation",        "equipe": "Team Billing",  "criticite": "haute",    "depend_de": ["auth", "catalogue-produits"] },
+    { "name": "catalogue-produits", "equipe": "Team Catalog",  "criticite": "moyenne",  "depend_de": ["auth"] },
+    { "name": "recherche",          "equipe": "Team Catalog",  "criticite": "moyenne",  "depend_de": ["catalogue-produits"] },
+    { "name": "notifications",      "equipe": "Team Growth",   "criticite": "basse",    "depend_de": ["auth"] }
+  ]
+}

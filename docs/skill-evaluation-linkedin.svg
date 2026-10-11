@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1600" viewBox="0 0 1600 1600" role="img" aria-labelledby="title desc">
+  <title id="title">Don't just write AI skills. Measure what they produce.</title>
+  <desc id="desc">An evaluation loop compares a standard skill and a deliberately degraded demo skill.
+    OpenCode loads the selected skill and generates a Quarkus MCP server. A completed skill-tool event
+    proves the skill was used. Generated Java sources, with comments removed, go to the Jev judge.
+    Jev returns typed probabilities. Java computes a score out of ten: useful descriptions weigh fifty
+    percent, clean delegation thirty percent, and not-found handling twenty percent. A local dashboard
+    compares the recorded runs. Repeat across multiple samples before drawing conclusions.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#101c31"/><stop offset="1" stop-color="#090f1c"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0 0L8 4.5L0 9" fill="none" stroke="#8da4c8" stroke-width="1.5"/>
+    </marker>
+    <style>
+      text { font-family:Arial,Helvetica,sans-serif; }
+      .label { fill:#a8bad3; font-size:20px; font-weight:700; letter-spacing:2px; }
+      .heading { fill:#edf3fd; font-size:34px; font-weight:700; }
+      .body { fill:#bdcbe0; font-size:23px; }
+      .small { fill:#a8bad3; font-size:21px; }
+    </style>
+  </defs>
+  <rect width="1600" height="1600" fill="url(#bg)"/>
+  <g transform="translate(0 80)">
+  <circle cx="1490" cy="90" r="205" fill="none" stroke="#223553" stroke-width="2"/>
+  <circle cx="1490" cy="90" r="145" fill="none" stroke="#223553" stroke-width="2"/>
+  <circle cx="1490" cy="90" r="85" fill="none" stroke="#223553" stroke-width="2"/>
+  <rect x="80" y="64" width="10" height="24" rx="3" fill="#71e5bb"/>
+  <text x="106" y="83" fill="#71e5bb" font-size="21" font-weight="700" letter-spacing="3">SKILL AUTHORING LAB</text>
+  <text x="80" y="172" fill="#edf3fd" font-size="64" font-weight="700" letter-spacing="-2">Don't just write AI skills.</text>
+  <text x="80" y="250" fill="#71e5bb" font-size="64" font-weight="700" letter-spacing="-2">Measure what they produce.</text>
+  <text x="80" y="304" class="body">One task. One rubric. Two skill recipes. Real generated code.</text>
+
+  <g stroke="#34455f" stroke-width="2" fill="#152137">
+    <rect x="80" y="368" width="300" height="312" rx="22"/>
+    <rect x="460" y="368" width="300" height="312" rx="22"/>
+    <rect x="840" y="368" width="300" height="312" rx="22"/>
+    <rect x="1220" y="368" width="300" height="312" rx="22"/>
+  </g>
+  <g stroke="#8da4c8" stroke-width="3" fill="none" marker-end="url(#arrow)">
+    <path d="M394 520H443"/><path d="M774 520H823"/><path d="M1154 520H1203"/>
+  </g>
+  <text x="106" y="415" class="label">01 / SELECT</text>
+  <text x="106" y="465" class="heading">The skill</text>
+  <rect x="106" y="494" width="248" height="54" rx="10" fill="#203c3d"/>
+  <text x="125" y="528" fill="#71e5bb" font-size="24" font-weight="700">Standard</text>
+  <rect x="106" y="563" width="248" height="54" rx="10" fill="#40312b"/>
+  <text x="125" y="597" fill="#ffbe78" font-size="24" font-weight="700">Degraded demo</text>
+  <text x="106" y="652" class="small">Same business request</text>
+
+  <text x="486" y="415" class="label">02 / GENERATE</text>
+  <text x="486" y="465" class="heading">OpenCode</text>
+  <text x="486" y="518" class="body">Loads the skill.</text>
+  <text x="486" y="554" class="body">Builds a Quarkus</text>
+  <text x="486" y="587" class="body">MCP server.</text>
+  <rect x="486" y="615" width="248" height="39" rx="8" fill="#203c3d"/>
+  <text x="501" y="641" fill="#71e5bb" font-size="20" font-weight="700">Proof: skill tool event</text>
+
+  <text x="866" y="415" class="label">03 / JUDGE</text>
+  <text x="866" y="465" class="heading">Jev</text>
+  <text x="866" y="518" class="body">Reads Java sources,</text>
+  <text x="866" y="554" class="body">not the skill itself.</text>
+  <text x="866" y="611" class="body">Returns typed</text>
+  <text x="866" y="644" class="body">probabilities.</text>
+
+  <text x="1246" y="415" class="label">04 / COMPARE</text>
+  <text x="1246" y="465" class="heading">Score + history</text>
+  <text x="1246" y="518" class="body">Weighted in Java.</text>
+  <text x="1246" y="554" class="body">Recorded per run.</text>
+  <text x="1246" y="611" class="body">Scores, breakdowns</text>
+  <text x="1246" y="644" class="body">and fingerprints.</text>
+
+  <rect x="80" y="738" width="1440" height="256" rx="22" fill="#152137" stroke="#34455f" stroke-width="2"/>
+  <text x="112" y="788" class="label">THE SAME RUBRIC, EVERY RUN</text>
+  <line x1="574" y1="820" x2="574" y2="955" stroke="#34455f" stroke-width="2"/>
+  <line x1="1054" y1="820" x2="1054" y2="955" stroke="#34455f" stroke-width="2"/>
+  <text x="112" y="867" fill="#71e5bb" font-size="49" font-weight="700">50%</text>
+  <text x="112" y="913" fill="#edf3fd" font-size="28" font-weight="700">Useful descriptions</text>
+  <text x="112" y="951" class="small">Can an agent choose and call the tool?</text>
+  <text x="610" y="867" fill="#96b7ff" font-size="49" font-weight="700">30%</text>
+  <text x="610" y="913" fill="#edf3fd" font-size="28" font-weight="700">Clean delegation</text>
+  <text x="610" y="951" class="small">Does the adapter stay thin?</text>
+  <text x="1090" y="867" fill="#ffbe78" font-size="49" font-weight="700">20%</text>
+  <text x="1090" y="913" fill="#edf3fd" font-size="28" font-weight="700">Not-found handling</text>
+  <text x="1090" y="951" class="small">Does a missing record fail gracefully?</text>
+
+  <path d="M1468 1020V1068H1070" fill="none" stroke="#71e5bb" stroke-width="3"/>
+  <path d="M1055 1068L1070 1060V1076Z" fill="#71e5bb"/>
+  <text x="80" y="1078" fill="#edf3fd" font-size="33" font-weight="700">Edit. Generate. Judge. Compare. Repeat.</text>
+  <text x="80" y="1130" class="body">A demo shows the loop. Multiple runs establish the evidence.</text>
+  <text x="1520" y="1160" fill="#8397b8" font-size="18" text-anchor="end">OpenCode + Jev / Maven + Java 21</text>
+  </g>
+  <rect x="80" y="1320" width="1440" height="200" rx="22" fill="#152137" stroke="#34455f" stroke-width="2"/>
+  <text x="112" y="1368" class="label">OBSERVED DEMO SCORES / NOT A CONTROLLED BENCHMARK</text>
+  <text x="112" y="1425" fill="#71e5bb" font-size="36" font-weight="700">Standard: 9.76 - 9.78 / 10</text>
+  <text x="835" y="1425" fill="#ffbe78" font-size="36" font-weight="700">Degraded: 0.27 / 10</text>
+  <text x="112" y="1475" class="small">2 generations / October 9, 2026</text>
+  <text x="835" y="1475" class="small">1 generation / October 11, 2026</text>
+</svg>
